@@ -7,8 +7,8 @@ function Pokemon(nombre, color, poderDeAtaque) {
 	this.vida = 100;
 	this.poderDeAtaque = poderDeAtaque;
 
-	this.mostrarPokemon = function() {
-		document.write("Hola, soy: " + this.nombre + " y soy de color: " + this.color + "<br>" + "mi poder de ataque es de: " + this.poderDeAtaque + "<br>");
+	this.mostrarPokemon = function() { // imprime la informacion en el html
+		document.getElementById("pokemon").innerHTML += ("Hola, soy: " + this.nombre + " y soy de color: " + this.color + "<br>" + "Mi poder de ataque es de: " + this.poderDeAtaque + "<br>" + "<br>");
 	}
   
 	this.aumentarAmistad = function(valor){
@@ -23,8 +23,11 @@ const Pikachu = new Pokemon("Pikachu", "amarillo", 100);
 Pikachu.mostrarPokemon(); 
   
 const Charmander = new Pokemon("Charmander", "rojo", 20);
+Charmander.mostrarPokemon();
+
 Pikachu.atacar(Charmander);
 document.write(Charmander.vida);
+
 
 
 
