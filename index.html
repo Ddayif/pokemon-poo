@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Pelea de Pokémon</title>
 </head>
 <body>
+	<h1>Elige a tu pokémon</h1>
 	<div id = "pokemon"></div>
+	
+	<div class="form-group" style="display: inline-block;">
+		<select class="form-control" id="pokemon1">
+			<option value="0">Selecciona a tu primer Pokemon</option>
+			<option value="Pikachu">Pikachu</option>
+			<option value="Charmander">Charmander</option>
+			<option value="Poliwag">Poliwag</option>
+			<option value="Ponyta">Ponyta</option>
+			<option value="Abra">Abra</option>
+			<option value="Machoke">Machoke</option>
+			<option value="Snorlax">Snorlax</option>
+		</select>
+	</div>
 
+	<div class="form-group" style="display: inline-block;">
+		<select class="form-con" id="pokemon2">
+						<option value="0">Selecciona a tu segundo Pokemon</option>
+			<option value="Pikachu">Pikachu</option>
+			<option value="Charmander">Charmander</option>
+			<option value="Poliwag">Poliwag</option>
+			<option value="Ponyta">Ponyta</option>
+			<option value="Abra">Abra</option>
+			<option value="Machoke">Machoke</option>
+			<option value="Snorlax">Snorlax</option>
+		</select>
+	</div>
+
+	 <button class="btn btn-lg btn-primary btn-block submit-btn" onclick="pelear()">Pelear</button>
+	 <p id = "pokemoncillo"></p>
+	<div>
+		<img src="assets/imagen/pokemon.jpg">	
+	</div>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
